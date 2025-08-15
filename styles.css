@@ -40,7 +40,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 2rem 2rem;
 }
 
 .customer-support {
@@ -122,12 +122,9 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
 }
 
-.navbar .fa-bars {
-    display: none;
-}
 
 .menu {
     display: flex;
@@ -221,7 +218,7 @@ html {
 .content-banner {
     max-width: 90rem;
     margin: 0 auto;
-    padding: 25rem 0;
+    padding: 25rem 2rem;
 }
 
 .content-banner p {
@@ -261,7 +258,7 @@ html {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
-    padding: 3rem 0;
+    padding: 3rem 2rem;
 }
 
 .card-feature {
@@ -305,6 +302,7 @@ html {
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 3rem;
+    padding: 0 2rem;
 }
 
 .container-categories {
@@ -379,6 +377,7 @@ html {
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 3rem;
+    padding: 0 2rem;
 }
 
 .container-options {
@@ -628,8 +627,8 @@ html {
 
 .button-group-blog {
     position: absolute;
-    bottom: 1.5rem;
-    right: -2.5rem;
+    bottom: 4rem;
+    right: -0.5rem;
     display: flex;
     gap: 0.7rem;
     z-index: -1;
@@ -770,6 +769,10 @@ html {
     gap: 1.5rem;
 }
 
+
+.social-icons a {
+    text-decoration: none;
+}
 .social-icons span {
     border-radius: 50%;
     width: 3rem;
@@ -855,7 +858,7 @@ html {
 
 /* media queries --768px */
 
-@media (max-width: 792px) {
+@media (max-width: 825px) {
 
     html {
         font-size: 50%;
@@ -878,20 +881,11 @@ html {
         padding: 1rem 2rem;
     }
 
-    .navbar .fa-bars {
-        display: block;
-        font-size: 3rem;
-        color: #fff;
-    }
-
-    .menu {
-        display: none;
-    }
 
     .content-banner {
         max-width: 50rem;
         margin: 0 auto;
-        padding: 25rem 0;
+        padding: 25rem 5rem;
     }
 
     .container-features {
@@ -943,7 +937,7 @@ html {
     .container-blogs {
         overflow: hidden;
         grid-template-columns: 1fr 1fr;
-        height: 55rem;
+        height: 62rem;
     }
     .blogs {
         padding-bottom: 2rem;
@@ -964,7 +958,7 @@ html {
 
 /* media queries 468px */
 
-@media (max-width: 480px) {
+@media (max-width: 555px) {
 
     html {
         font-size: 42.5%;
@@ -972,7 +966,7 @@ html {
 
     .content-banner {
         max-width: 58rem;
-        padding: 22rem 0;
+        padding: 22rem 5rem;
     }
 
     .heading-1 {
@@ -1028,7 +1022,7 @@ html {
 
     .container-blogs {
         grid-template-columns: 1fr;
-        height: 74rem;
+        height: 78rem;
     }
 
     .content-blog h3 {
