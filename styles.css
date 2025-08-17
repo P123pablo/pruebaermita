@@ -340,20 +340,20 @@ html {
 }
 
 .category-moca {
-    background-image: linear-gradient(#00000080, #00000080), url(/img/tapas-category.png);
+    background-image: linear-gradient(#00000080, #00000080), url(img/tapas-category.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .category-capuchino {
-    background-image: linear-gradient(#00000080, #00000080), url(/img/vinos-category.png);
+    background-image: linear-gradient(#00000080, #00000080), url(img/vinos-category.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .category-expreso {
-    background-image: linear-gradient(#00000080, #00000080), url(/img/bocadillos-category.png);
+    background-image: linear-gradient(#00000080, #00000080), url(img/bocadillos-category.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1036,7 +1036,7 @@ html {
     }
 
     .container-products {
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 
@@ -1045,7 +1045,7 @@ html {
     }
 
     .content-card-product h3 {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
 
     .gallery {
