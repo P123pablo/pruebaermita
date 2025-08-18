@@ -281,6 +281,7 @@ html {
     padding: 1.5rem 0;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    height: 100%;
 }
 
 
@@ -297,13 +298,13 @@ html {
 
 .feature-content span {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--dark-color);
 }
 
 .feature-content p {
     color: #777;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 
@@ -616,6 +617,7 @@ html {
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 3rem;
+    padding: 0 2rem;
 }
 
 /* BLOGS */
@@ -624,6 +626,7 @@ html {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 0 2rem;
 }
 
 .container-blogs {
@@ -734,11 +737,12 @@ html {
     flex-direction: column;
     gap: 4rem;
     padding: 3rem;
+    background-color: var(--primary-color);
 }
 
 .menu-footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2,1fr) minmax(18rem, 1fr);
     gap: 3rem;
     justify-content: center;
 }
@@ -752,11 +756,26 @@ html {
 .contact-info,
 .information,
 .my-account,
-.newsletter,
-.logo-footer{
+.newsletter{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.logo-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    grid-column: 1/4;
+}
+
+.logo-footer img {
+    margin: auto;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
 }
 
 .contact-info ul,
@@ -794,18 +813,14 @@ html {
     gap: 1.5rem;
 }
 
-.logo-footer img {
-    width: 25rem;
-    height: 25rem;
-    border-radius: 50%;
-}
+
 .social-icons a {
     text-decoration: none;
 }
 .social-icons span {
     border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
 
     display: flex;
     align-items: center;
@@ -813,7 +828,7 @@ html {
 }
 
 .social-icons span i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
 }
 
@@ -933,6 +948,17 @@ html {
         padding: 2rem;
     }
 
+    .card-feature {
+        flex-direction: column;
+        border-radius: 2rem;
+    }
+
+    .feature-content {
+        align-items: center;
+        text-align: center;
+    }
+
+
     .heading-1 {
         font-size: 2.4rem;
     }
@@ -981,6 +1007,18 @@ html {
 
     .menu-footer {
         grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .newsletter {
+        grid-column: 1/3;
+    }
+
+    .logo-footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-column: 1/3;
     }
 
     .copyright {
@@ -1000,11 +1038,23 @@ html {
         font-size: 42.5%;
     }
 
-    .content-banner {
-        max-width: 58rem;
-        padding: 10rem 5rem;
+    .banner {
+        background-size: cover;
+        background-position: center;
     }
 
+    .container-logo h1 a{
+        font-size: 4.5rem;
+    }
+
+    .content-banner {
+        max-width: 58rem;
+        padding: 20rem 2rem;
+    }
+
+    .content-banner h2 {
+        font-size: 4rem;
+    }
     .heading-1 {
         font-size: 2.8rem;
     }
@@ -1094,10 +1144,21 @@ html {
         text-align: center;
     }
 
+    .newsletter
     .logo-footer {
+        flex-direction: row;
         align-items: center;
         justify-content: center;
+        grid-column: 1/2;
     }
+
+    .logo-footer img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+
+
     .content p {
         font-size: 1.8rem;
     }
